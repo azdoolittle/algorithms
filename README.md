@@ -1,2 +1,1 @@
-# drewdoolittle-gmail.com
-algorithms
+# Algorithm Solutions 
