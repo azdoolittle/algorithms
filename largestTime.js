@@ -46,7 +46,7 @@ function largestTime(array) {
   var input = array.slice();
   var time = [];
 
-  // find a 2
+  // find greatest value below 3
   if (input.includes(2)) {
     time.push(input.splice(input.indexOf(2), 1))
   } else if (input.includes(2)) {
