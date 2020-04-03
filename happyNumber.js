@@ -12,8 +12,41 @@ Example:
 Input: 19
 Output: true
 Explanation:
-12 + 92 = 82
-82 + 22 = 68
-62 + 82 = 100
-12 + 02 + 02 = 1
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
 */
+
+/*
+O   true
+I   any positive integer
+C
+E
+
+12
+1^2 + 2^2 = 5
+5^2 = 25
+2^2 + 5^2 = 27
+2^2 + 7^2 = 51
+5^2 + 1^2 = 26
+2^2 + 6^2 = 40
+4^2 + 0^2 = 16
+1^2 + 6^2 = 37
+3^2 + 7^2 = 58
+5^2 + 8^2 = 89
+
+21
+2^2 + 1^2 = 5
+
+valid numbers
+[1, powers of 1, powers of 1 + 9]
+*/
+
+function happyNumber(num) {
+  var isHappy = false;
+  var split = num.split('');
+
+
+  return isHappy;
+}
