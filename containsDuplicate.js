@@ -1,5 +1,8 @@
 /*
-Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
+Given an array of integers and an integer k,
+find out whether there are two distinct indices i and j
+in the array such that nums[i] = nums[j]
+and the absolute difference between i and j is at most k.
 
 Example 1:
 
@@ -15,6 +18,10 @@ Input: nums = [1,2,3,1,2,3], k = 2
 Output: false
 */
 
-function containsDuplicate() {
+function containsDuplicate(array, difference) {
+  var sortedArr = array.sort((a, b) => a - b);
+  var greatest = sortedArr[sortedArr.length - 1];
+  var least = sortedArr[0];
 
+  return greatest - least === difference;
 }
