@@ -18,10 +18,12 @@ Input: nums = [1,2,3,1,2,3], k = 2
 Output: false
 */
 
-function containsDuplicate(array, difference) {
-  var sortedArr = array.sort((a, b) => a - b);
-  var greatest = sortedArr[sortedArr.length - 1];
-  var least = sortedArr[0];
-
-  return greatest - least === difference;
+function containsDuplicate(nums, k) {
+  var map = {};
+  for (var i = 0; i < nums.length; i += 1) {
+    if (map[nums[i]] >= 0 && i - map[nums[i]] <= k) {
+      return true;
+    }
+  }
+  return false;
 }
